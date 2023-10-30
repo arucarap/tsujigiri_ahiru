@@ -1,0 +1,12 @@
+{
+  "name": "TsujigiriAhiru",
+  "description": "DuckDuckGoの検索結果から迷惑サイトを除去します。",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://duckduckgo.com/*"],
+      "js": ["tsujigiri_ahiru.js"]
+    }
+  ]
+}

@@ -3,7 +3,7 @@ const LINK_CLASS = 'Rn_JXVtoPVAFyGkcaXyK';
 const FIRST_RESULT = 'r1-0';
 const searchResultList = document.getElementsByClassName('react-results--main')[0];
 
-removeSpams(searchResultList.children);
+removeSpams(document.getElementsByClassName(ARTICLE_CLASS));
 
 const observer = new MutationObserver(records => {
   records.forEach(record => {
